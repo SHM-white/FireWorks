@@ -32,7 +32,7 @@ public:
 	void InitFireWork();
 	void MoveFireWork();
 	void GetFireWork(int i,int& ix,int& iy);
-	static const int Count{ 500 };
+	static const int Count{ 200 };
 	COLORREF mGetColor();
 private:
 	int CenterX;
@@ -73,8 +73,8 @@ void FireWorkParticle::MoveFireWork()
 	if (count > max_count){ 
 		InitFireWork(); 
 		count = 0;
-		CenterX = rand() % 640;
-		CenterY = rand() % 480;
+		CenterX = rand() % 1280;
+		CenterY = rand() % 720;
 	}
 		
 }
